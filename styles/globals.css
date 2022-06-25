@@ -1,16 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Quicksand", sans-serif;
+  scroll-behavior: smooth;
 }
 
 a {
-  color: inherit;
+  color: unset;
   text-decoration: none;
 }
 
 * {
   box-sizing: border-box;
+  background: #0e1630;
+}
+
+p {
+  color: #808dad;
+  line-height: 30px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #fff;
+}
+
+h2 {
+  font-size: 2.5rem !important;
+}
+
+section {
+  padding-top: 150px;
+}
+
+footer {
+  padding-bottom: 10px;
+  padding-top: 60px;
+  border-top: 1px solid #171f38;
+}
+
+.primary__btn {
+  background: #171f38 !important;
+  padding: 7px 25px !important;
+  border: 1px solid #01d293 !important;
+  border-radius: 5px;
+}
+
+.primary__btn a {
+  text-decoration: none;
+  color: #01d293;
+  background: transparent !important;
+}
+
+.secondary__btn {
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 7px 25px;
+}
+
+.secondary__btn a {
+  color: #01d293 !important;
+}
+.primary__btn a:hover,
+.secondary__btn a:hover {
+  color: #01d293;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: #808dad;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 2em;
+  background: #171f38;
+}
+
+@media only screen and (max-width: 992px) {
+  p {
+    font-size: 0.9rem !important;
+  }
+
+  .primary__btn a,
+  .secondary__btn a {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  section {
+    padding-top: 110px;
+  }
+
+  footer {
+    padding-top: 0;
+    border: none;
+  }
 }
